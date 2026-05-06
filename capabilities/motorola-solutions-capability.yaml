@@ -1,0 +1,68 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Motorola Solutions API
+  description: Motorola Solutions provides APIs for public safety communications, command center software, and video security
+    integration. The platform enables partners to build on Motorola's public safety infrastructure.
+  tags:
+  - Motorola
+  - Solutions
+  - API
+  created: '2026-05-06'
+  modified: '2026-05-06'
+capability:
+  consumes:
+  - type: http
+    namespace: motorola-solutions
+    baseUri: https://api.motorolasolutions.com
+    description: Motorola Solutions API HTTP API.
+    authentication:
+      type: bearer
+      token: '{{MOTOROLA_SOLUTIONS_TOKEN}}'
+    resources:
+    - name: status
+      path: /status
+      operations:
+      - name: getstatus
+        method: GET
+        description: Get API status
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: motorola-solutions-rest
+    description: REST adapter for Motorola Solutions API.
+    resources:
+    - path: /status
+      name: getstatus
+      operations:
+      - method: GET
+        name: getstatus
+        description: Get API status
+        call: motorola-solutions.getstatus
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: motorola-solutions-mcp
+    transport: http
+    description: MCP adapter for Motorola Solutions API for AI agent use.
+    tools:
+    - name: getstatus
+      description: Get API status
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: motorola-solutions.getstatus
+      outputParameters:
+      - type: object
+        mapping: $.
+binds:
+- namespace: env
+  keys:
+    MOTOROLA_SOLUTIONS_TOKEN: MOTOROLA_SOLUTIONS_TOKEN
