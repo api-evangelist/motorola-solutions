@@ -4,85 +4,40 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: Motorola Solutions
 providerId: motorola-solutions
 created: '2026-05-04'
-modified: '2026-05-04'
+modified: '2026-05-05'
+reconciled: false
 tags:
-  - Public Safety
-  - Communications
-  - Video Security
-  - IoT
   - Rate Limiting
-  - Quotas
-  - Throttling
-description: Machine-readable rate limit definitions for the Motorola Solutions API surface. Captures
-  per-tier quotas, burst behavior, response signaling, and recovery semantics. Defaults are scaffold values
-  to be replaced with published provider limits.
-headers:
-  limit: X-RateLimit-Limit
-  remaining: X-RateLimit-Remaining
-  reset: X-RateLimit-Reset
-  retryAfter: Retry-After
-  policy: RateLimit-Policy
+  - Public Safety
+  - Land Mobile Radio
+  - Mission Critical
+description: Motorola Solutions ADP APIs run inside customer-deployed radio infrastructure (MOTOTRBO,
+  ASTRO 25, TETRA / DIMETRA, broadband Push-to-X). Rate, throughput, and concurrency limits are sized
+  by the deploying agency / operator and are not published as a single public number. Documentation lives
+  inside the gated developer portal at code.motorolasolutions.com.
+sources:
+  - https://www.motorolasolutions.com/en_us/partners/become-partner/application-partner-developer-program.html
+  - https://www.motorolasolutions.com/en_xa/developers/application-partner-developer-program/resources.html
+notes: No public per-second / per-minute numbers are published; reconciled set to false.
 responseCodes:
   throttled: 429
-  quotaExceeded: 429
-  serviceUnavailable: 503
 limits:
-  - tier: free
-    name: Free Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 10
-    burst: 20
-    timeFrame: minute
-    applies:
-      - Motorola Solutions API
-  - tier: free
-    name: Free Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 1000
-    timeFrame: month
-    applies:
-      - Motorola Solutions API
-  - tier: professional
-    name: Professional Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 100
-    burst: 200
-    timeFrame: minute
-    applies:
-      - Motorola Solutions API
-  - tier: professional
-    name: Professional Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 100000
-    timeFrame: month
-    applies:
-      - Motorola Solutions API
-  - tier: enterprise
-    name: Enterprise Negotiated Limit
-    scope: contract
-    metric: requests_per_minute
-    limit: 1000
-    burst: 5000
-    timeFrame: minute
-    applies:
-      - Motorola Solutions API
+  - name: Deployment-defined throughput
+    scope: deployment
+    metric: varies
+    limit: see ADP developer portal (gated)
+    notes: Sized to the radio system's capacity (sites, talkgroups, subscribers) and the integration's
+      operational profile.
 policies:
-  - name: Backoff Strategy
-    description: Clients should implement exponential backoff with jitter, honoring the Retry-After header
-      when present.
-  - name: Burst Handling
-    description: Short bursts above the steady-state limit are tolerated up to the documented burst ceiling
-      before throttling engages.
-  - name: Quota Reset
-    description: Monthly quotas reset at the start of each calendar month in UTC. Per-minute and per-second
-      windows reset on a sliding-window basis.
-  - name: Fair Use
-    description: Even on uncapped enterprise tiers, sustained usage that materially impacts shared infrastructure
-      may be subject to fair-use throttling.
+  - name: Mission-critical priority
+    description: ASTRO 25 and TETRA / DIMETRA enforce mission-critical priority for voice and dispatch
+      traffic; data API consumers are deprioritized when contention occurs.
+  - name: ADP guidance
+    description: Approved developers consult the ADP developer portal (code.motorolasolutions.com) and
+      Motorola Solutions ADP engineering team for endpoint-specific throughput recommendations.
+  - name: Operator sizing
+    description: The owning agency / operator sizes infrastructure and defines its own integration throughput
+      ceiling on top of the platform.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
