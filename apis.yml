@@ -6,7 +6,7 @@ description: >-
   APIs for public safety communications, command center software, and video security
   integration. The platform enables partners to build on Motorola's public safety
   infrastructure.
-type: Contract
+kind: contract
 position: Consuming
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
