@@ -19,10 +19,16 @@ modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/motorola-solutions/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 common:
+  - type: DomainSecurity
+    url: security/motorola-solutions-domain-security.yml
+  - type: Authentication
+    url: authentication/motorola-solutions-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/MotorolaSolutions
   - type: LinkedIn
     url: https://www.linkedin.com/company/motorolasolutions
+  - url: https://www.motorolasolutions.com/en_us/blog/rss.xml
+    type: Blog
 apis:
   - aid: motorola-solutions:motorola-api
     name: Motorola Solutions API
