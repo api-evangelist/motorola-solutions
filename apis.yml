@@ -19,6 +19,8 @@ modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/motorola-solutions/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 common:
+  - type: AgenticAccess
+    url: agentic-access/motorola-solutions-agentic-access.yml
   - type: DomainSecurity
     url: security/motorola-solutions-domain-security.yml
   - type: Authentication
