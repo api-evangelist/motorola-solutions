@@ -1,32 +1,27 @@
 openapi: 3.1.0
 info:
-  title: Motorola Solutions API
-  description: >-
-    Motorola Solutions provides APIs for public safety communications, command center software, and video security integration. The platform enables partners to build on Motorola's public safety infrastructure.
+  title: Motorola Solutions Public Safety API
+  description: Motorola Solutions provides APIs for public safety communications, command center software, and video security integration. The platform enables partners to build on Motorola's public safety infrastructure.
   version: '1.0'
   contact:
     name: Motorola Solutions Developer Support
     url: https://developer.motorolasolutions.com/
-externalDocs:
-  description: Documentation
-  url: https://developer.motorolasolutions.com/
 servers:
-  - url: https://api.motorolasolutions.com
-    description: Production
-tags:
-  - name: Public Safety
-    description: Public Safety operations
+- url: https://api.motorolasolutions.com
+  description: Production
 security:
-  - bearerAuth: []
+- bearerAuth: []
+tags:
+- name: Public Safety
+  description: Public Safety operations
 paths:
   /status:
     get:
       operationId: getStatus
       summary: Get API status
-      description: >-
-        Returns the current status of the API.
+      description: Returns the current status of the API.
       tags:
-        - Public Safety
+      - Public Safety
       responses:
         '200':
           description: Success
@@ -48,3 +43,6 @@ components:
     bearerAuth:
       type: http
       scheme: bearer
+externalDocs:
+  description: Documentation
+  url: https://developer.motorolasolutions.com/
