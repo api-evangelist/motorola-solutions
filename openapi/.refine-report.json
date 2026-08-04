@@ -1,0 +1,14 @@
+{
+  "provider": "motorola-solutions",
+  "sources": [
+    "motorola-solutions-public-safety-api-openapi.yml"
+  ],
+  "outputs": [
+    "motorola-solutions-public-safety-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
