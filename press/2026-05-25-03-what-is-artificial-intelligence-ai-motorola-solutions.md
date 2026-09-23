@@ -1,7 +1,9 @@
 ---
 title: What is Artificial Intelligence(AI)? - Motorola Solutions
 url: https://www.motorolasolutions.com/en_us/solutions/what-is-ai.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Motorola Solutions" press release artificial intelligence'
 position: 3
 source: serpapi-google

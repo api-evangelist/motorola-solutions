@@ -1,7 +1,9 @@
 ---
 title: Motorola Solutions Introduces 'AI Nutrition Labels,' a First for ...
 url: https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-introduces-ai-nutrition-labels.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Motorola Solutions" press release artificial intelligence'
 position: 1
 source: serpapi-google

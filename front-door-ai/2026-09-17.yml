@@ -1,0 +1,29 @@
+# Front Door AI Index — motorola-solutions — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: motorola-solutions
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: motorolasolutions.com
+  final_host: www.motorolasolutions.com
+  ownership: inherited
+  owner: motorola-solutions
+  shares_host_with: null
+  inherited_from: www.motorolasolutions.com
+  verdict: scored
+  score: null
+  host_score: 18
+  density: null
+  words: 5137
+  tiers:
+    agentic: 0
+    core: 18
+    model: 0
+  ambiguous: 36
+  top_terms:
+    intelligence: 18
+    AI: 15
+    smart: 13
+    automation: 5
+    artificial intelligence: 3

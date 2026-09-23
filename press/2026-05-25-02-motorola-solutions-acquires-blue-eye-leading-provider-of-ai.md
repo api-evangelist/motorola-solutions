@@ -1,7 +1,9 @@
 ---
 title: Motorola Solutions acquires Blue Eye, leading provider of AI ...
 url: https://www.motorolasolutions.com/newsroom/press-releases/motorola-solutions-acquires-blue-eye.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Motorola Solutions" press release artificial intelligence'
 position: 2
 source: serpapi-google
