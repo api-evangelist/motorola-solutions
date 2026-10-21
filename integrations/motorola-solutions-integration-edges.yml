@@ -95,6 +95,88 @@ edges:
     detected: '2026-10-15'
   detected_by: sweep-gov-cloud.py
   first_seen: '2026-10-15'
+- partner_name: FirstNet App Catalog (AT&T)
+  partner: att
+  partner_match: mirror
+  mirror_match: domain+name-among-holders
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: firstnet-app-catalog
+  evidence: https://www.firstnet.com/content/dam/firstnet/white-papers/firstnet-app-catalog-booklet.pdf
+  mirror_of: att/integrations/att-integration-edges.yml
+  apps:
+  - Wave Push-to-Talk (PTT)
+  badges:
+  - FirstNet Certified
+  as_of: '2023-03-08'
+  detected: '2026-10-20'
+  detected_by: sweep-public-safety-ng911.py
+  identity: wikidata Q634815 'Motorola Solutions' P856 https://www.motorolasolutions.com/
+  identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+- partner_name: FirstNet App Evaluation (Verified / Certified)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.firstnet.com/content/dam/firstnet/white-papers/firstnet-app-catalog-booklet.pdf
+  category: FirstNet evaluated public-safety apps
+  contract_reference:
+    register: FirstNet App Catalog booklet (firstnet.com, issue 03.08.2023)
+    standard: FirstNet App Evaluation
+    spec_file: null
+    role: firstnet-evaluated-publisher
+    registered_name: Motorola Solutions
+    matched_domain: motorolasolutions.com
+    matched_by: domain+name-among-holders
+    certified_products:
+    - product: FirstNet Certified app
+      product_type: FirstNet Certified app
+      lapsed: false
+      as_of: '2023-03-08'
+      apps:
+      - Wave Push-to-Talk (PTT)
+      currency_note: booklet issue 2023-03-08 is the latest public issue; the live catalog is behind a login, so
+        currency after that date is unverified (not assumed lapsed)
+    signal_note: 'certified_products = one entry per FirstNet designation held (Verified: security, relevance, 99.9%
+      availability; Certified: adds resiliency / scalability and 99.99%), never per app or OS; app names are context,
+      never counted'
+    detected_by: sweep-public-safety-ng911.py
+    detected: '2026-10-20'
+    identity: wikidata Q634815 'Motorola Solutions' P856 https://www.motorolasolutions.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-public-safety-ng911.py
+  first_seen: '2026-10-20'
+- partner_name: Colorado CBI CJIS Vendor Management Program
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://cbi.colorado.gov/criminal-justice/cjis-security/cjis-vendor-management-program/vendor-directory
+  category: CJIS vendor programme (Colorado)
+  contract_reference:
+    register: Colorado Bureau of Investigation CJIS Vendor Management Program directory
+    standard: FBI CJIS Security Policy
+    spec_file: null
+    role: cjis-vendor-enrolled
+    registered_name: Motorola Solutions Inc
+    register_country: US
+    register_state: CO
+    matched_domain: motorolasolutions.com
+    matched_by: domain+name-among-holders
+    signal_note: 'participation only: enrolment in a state CSA''s vendor programme (staff fingerprinting); the CBI
+      states presence is not a guarantee of CJIS compliance'
+    detected_by: sweep-public-safety-ng911.py
+    detected: '2026-10-20'
+    identity: wikidata Q634815 'Motorola Solutions' P856 https://www.motorolasolutions.com/
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-public-safety-ng911.py
+  first_seen: '2026-10-20'
 generated: '2026-10-15'
 method: searched
 source:
@@ -105,3 +187,11 @@ checked:
 - https://govramp.org/program-participants
 - https://raw.githubusercontent.com/18F/fedramp-data/4b73d9247fd6360759960e4690e3ce4ca858e0fa/data/data.json
 - https://www.applytosupply.digitalmarketplace.service.gov.uk/g-cloud-15/suppliers
+- https://appcomm.org/
+- https://apps.firstnet.att.com/
+- https://cbi.colorado.gov/criminal-justice/cjis-security/cjis-vendor-management-program/vendor-directory
+- https://www.dps.texas.gov/section/infrastructure-operations/vendor-forms
+- https://www.firstnet.com/apps.html
+- https://www.firstnet.com/content/dam/firstnet/white-papers/firstnet-app-catalog-booklet.pdf
+- https://www.ijis.org/
+- https://www.nena.org/
