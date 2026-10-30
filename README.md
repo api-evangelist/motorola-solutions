@@ -1,4 +1,4 @@
-# Motorola Solutions (motorola-solutions)
+# Motorola Solutions
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,53 +66,115 @@
 
 Motorola Solutions is a Fortune 500 company that provides developer APIs and integration capabilities through its developer platform. Motorola Solutions provides APIs for public safety communications, command center software, and video security integration. The platform enables partners to build on Motorola's public safety infrastructure.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/motorola-solutions/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/motorola-solutions/refs/heads/main/apis.yml)
+**Areas:** Public Safety · Communications · Video Security · IoT · Fortune 500
 
-## Scope
+## Motorola Solutions on APIs.io
 
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Motorola Solutions is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/motorola-solutions/](https://apis.io/providers/motorola-solutions/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Public Safety
-- Communications
-- Video Security
-- IoT
+- [Motorola Solutions Public Safety API](https://apis.io/apis/motorola-solutions/motorola-solutions-public-safety-api/) — Public Safety operations
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Motorola Solutions API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Motorola Solutions provides APIs for public safety communications, command center software, and video security integration. The platform enables partners to build on Motorola's public safety infrastructure.
+- [Motorola Solutions Agentic Access](https://apis.io/agentic-access/motorola-solutions/motorola-solutions-agentic-access/)
 
-- **Human URL:** [https://developer.motorolasolutions.com/](https://developer.motorolasolutions.com/)
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Public Safety
-- Communications
-- Video Security
-- IoT
+- [Motorola Solutions API](https://apis.io/collections/motorola-solutions/open-motorola-solutions-motorola-api/)
+- [Motorola Solutions Public Safety API](https://apis.io/collections/motorola-solutions/open-motorola-solutions-public-safety-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://developer.motorolasolutions.com/)
-- [OpenAPI](openapi/motorola-solutions-motorola-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/motorola-solutions-motorola-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/motorola-solutions-motorola-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Motorola Solutions Authentication](https://apis.io/security/motorola-solutions/motorola-solutions-authentication/)
+- [Motorola Solutions Domain Security](https://apis.io/security/motorola-solutions/motorola-solutions-domain-security/)
 
-- [GitHub Organization](https://github.com/MotorolaSolutions)
-- [LinkedIn](https://www.linkedin.com/company/motorolasolutions)
+#### Plans and pricing (1)
 
-## Maintainers
+Published plans, tiers and prices.
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- [Motorola Solutions Plans Pricing](https://apis.io/plans/motorola-solutions/motorola-solutions-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Motorola Solutions Rate Limits](https://apis.io/rate-limits/motorola-solutions/motorola-solutions-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Motorola Solutions Finops](https://apis.io/finops/motorola-solutions/motorola-solutions-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://motorolasolutions.com)
+- [Blog](https://www.motorolasolutions.com/en_us/blog/rss.xml)
+- [GitHub](https://github.com/MotorolaSolutions)
+
+## API Evangelist rating
+
+**Kin Score 23.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 51.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 7.9 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/motorola-solutions/](https://apis.io/providers/motorola-solutions/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Motorola Solutions: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/motorola-solutions/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
